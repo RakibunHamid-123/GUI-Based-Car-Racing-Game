@@ -1,2 +1,3 @@
 Description: A simple and interactive Java car racing game where the player controls a car to avoid enemy cars and survive as long as possible. The game includes road animation, sound effects, score counting, timer system, and restart functionality. The objective of the project is to practice Java GUI programming, graphics, animation, event handling, and game logic implementation.
+
 Features: Smooth car movement, random enemy car generation, moving road animation, score counting system, timer display, sound effects, keyboard controls, game over system, restart system, and interactive colorful GUI design.
