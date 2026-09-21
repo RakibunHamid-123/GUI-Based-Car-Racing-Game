@@ -4,29 +4,36 @@ Features: Smooth car movement, random enemy car generation, moving road animatio
 
 The structural Description of every week updates of Car Racing Game:
 
--Week2.java:Environment Setup & Window Canvas Initialization
+Car-Racing-Game/
 
--Week3.java:Track Layout & Vector Graphics Rendering
+├── src/
 
--Week4.java    # KeyListener Integration & Player Movement Bounds
+│   └── weeks/
 
--Week5.java    # Enemy Spawning System & Lane Scrolling Physics
+│       ├── Week2.java    # Environment Setup & Window Canvas Initialization
 
--Week6.java    # Frame Counter, Score System & Survival Timer
+│       ├── Week3.java    # Track Layout & Vector Graphics Rendering
 
--Week7.java    # Collision Detection Engine & Game Over State
+│       ├── Week4.java    # KeyListener Integration & Player Movement Bounds
 
--Week8.java    # Java Sound API Integration & WAV Asset Loader
+│       ├── Week5.java    # Enemy Spawning System & Lane Scrolling Physics
 
--Week9.java    # Finite State Machine, Welcome Screen & System Restart
+│       ├── Week6.java    # Frame Counter, Score System & Survival Timer
 
-Extra Resources Used (sound files):
-week(8)-
-welcome.wav   # Menu Background Music
+│       ├── Week7.java    # Collision Detection Engine & Game Over State
 
-run.wav       # Engine Driving Background Audio
+│       ├── Week8.java    # Java Sound API Integration & WAV Asset Loader
 
-score.wav     # Point Score Sound Effect
+│       └── Week9.java    # Finite State Machine, Welcome Screen & System Restart
 
-crash.wav     # Collision Sound Effect
+└── resources/
 
+    └── weeks/
+    
+        ├── welcome.wav   # Menu Background Music
+        
+        ├── run.wav       # Engine Driving Background Audio
+        
+        ├── score.wav     # Point Score Sound Effect
+        
+        └── crash.wav     # Collision Sound Effect
