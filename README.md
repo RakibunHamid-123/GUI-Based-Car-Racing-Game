@@ -80,5 +80,9 @@ Week 10: Final Quality Assurance, Optimization & Repository Polish
 
 The final phase focused on code refactoring, performance optimization, and comprehensive documentation. Resource stream management was tested to ensure proper garbage collection of audio resources, screen redraw performance was verified for consistent frame rates, and visual layout alignments were polished. Complete project documentation, architectural overviews, and setup instructions were compiled to deliver a production-ready GitHub repository.
 
+🔊 Sound File Attachment Technique:
+
+Audio integration utilizes Java's Classloader to access classpath resources via getClass().getResource("/weeks/filename.wav"). This ensures cross-platform audio file resolution and avoids hardcoded file system dependencies when compiled into an executable JAR. Audio bytes are streamed into uncompressed Clip memory objects via AudioSystem.getAudioInputStream(). Background loops are executed using Clip.LOOP_CONTINUOUSLY, while event-driven effects use one-shot clip.start() triggers wrapped inside non-blocking try-catch blocks.
+
 🏁 Conclusion: 
 The Java 2D Car Racing Game project successfully demonstrates the power and flexibility of core Java Swing and AWT frameworks when building performant, object-oriented desktop games without external heavy engines. Through a structured 10-week developmental lifecycle, the application evolved from simple window initialization into a complete arcade experience featuring custom vector rendering, a state-driven architecture, robust collision physics, responsive user input, and embedded multi-channel audio.   By maintaining clean component isolation, leveraging native Swing timing mechanisms, and utilizing classpath resource streaming, the project serves as an ideal reference implementation for Java game loops, GUI event handling, and cross-platform desktop application packaging.           
