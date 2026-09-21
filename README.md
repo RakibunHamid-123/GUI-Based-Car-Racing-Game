@@ -16,5 +16,5 @@ week(8)-
 welcome.wav   # Menu Background Music
 run.wav       # Engine Driving Background Audio
 score.wav     # Point Score Sound Effect
-crash.wav     # Collision Sound Effect.
+crash.wav     # Collision Sound Effect
 
