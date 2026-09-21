@@ -1,8 +1,8 @@
-Description: A simple and interactive Java car racing game where the player controls a car to avoid enemy cars and survive as long as possible. The game includes road animation, sound effects, score counting, timer system, and restart functionality. The objective of the project is to practice Java GUI programming, graphics, animation, event handling, and game logic implementation.
+1)Description: A simple and interactive Java car racing game where the player controls a car to avoid enemy cars and survive as long as possible. The game includes road animation, sound effects, score counting, timer system, and restart functionality. The objective of the project is to practice Java GUI programming, graphics, animation, event handling, and game logic implementation.
 
-Features: Smooth car movement, random enemy car generation, moving road animation, score counting system, timer display, sound effects, keyboard controls, game over system, restart system, and interactive colorful GUI design.
+2)Features: Smooth car movement, random enemy car generation, moving road animation, score counting system, timer display, sound effects, keyboard controls, game over system, restart system, and interactive colorful GUI design.
 
-The structural Description of every week updates of Car Racing Game:
+3)The structural Description of every week updates of Car Racing Game:
 
 Car-Racing-Game/
 
@@ -30,19 +30,19 @@ Car-Racing-Game/
 
 │       └── Week10.pdf    #Final Deployment And Polish, Final Testing And Debugging, Project Completion And Documentation
 
-└── resources(sound files-week 8)
+└── resources(sound files)
 
-    └── weeks/
+    └── weeks/(week 8)
     
-        ├── welcome.wav   -Menu Background Music
+         ├── welcome.wav   -Menu Background Music
         
-        ├── run.wav       -Engine Driving Background Audio
+         ├── run.wav       -Engine Driving Background Audio
         
-        ├── score.wav     -Point Score Sound Effect
+         ├── score.wav     -Point Score Sound Effect
         
-        └── crash.wav     -Collision Sound Effect
+         └── crash.wav     -Collision Sound Effect
 
-📅 Weekly Development Summary
+4)Weekly Development Summary
 
 Week 1: Project Planning & Requirements Analysis
 
@@ -84,9 +84,9 @@ Week 10: Final Quality Assurance, Optimization & Repository Polish
 
 The final phase focused on code refactoring, performance optimization, and comprehensive documentation. Resource stream management was tested to ensure proper garbage collection of audio resources, screen redraw performance was verified for consistent frame rates, and visual layout alignments were polished. Complete project documentation, architectural overviews, and setup instructions were compiled to deliver a production-ready GitHub repository.
 
-🔊 Sound File Attachment Technique:
+5)Sound File Attachment Technique:
 
 Audio integration utilizes Java's Classloader to access classpath resources via getClass().getResource("/weeks/filename.wav"). This ensures cross-platform audio file resolution and avoids hardcoded file system dependencies when compiled into an executable JAR. Audio bytes are streamed into uncompressed Clip memory objects via AudioSystem.getAudioInputStream(). Background loops are executed using Clip.LOOP_CONTINUOUSLY, while event-driven effects use one-shot clip.start() triggers wrapped inside non-blocking try-catch blocks.
 
-🏁 Conclusion: 
+6)Conclusion: 
 The Java 2D Car Racing Game project successfully demonstrates the power and flexibility of core Java Swing and AWT frameworks when building performant, object-oriented desktop games without external heavy engines. Through a structured 10-week developmental lifecycle, the application evolved from simple window initialization into a complete arcade experience featuring custom vector rendering, a state-driven architecture, robust collision physics, responsive user input, and embedded multi-channel audio.   By maintaining clean component isolation, leveraging native Swing timing mechanisms, and utilizing classpath resource streaming, the project serves as an ideal reference implementation for Java game loops, GUI event handling, and cross-platform desktop application packaging.           
