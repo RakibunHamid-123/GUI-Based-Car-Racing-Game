@@ -10,6 +10,8 @@ Car-Racing-Game/
 
 │   └── weeks/
 
+│       ├── Week1.pdf     # Requirement Collection And Planning Project Layout
+
 │       ├── Week2.java    # Environment Setup & Window Canvas Initialization
 
 │       ├── Week3.java    # Track Layout & Vector Graphics Rendering
@@ -25,6 +27,8 @@ Car-Racing-Game/
 │       ├── Week8.java    # Java Sound API Integration & WAV Asset Loader
 
 │       └── Week9.java    # Finite State Machine, Welcome Screen & System Restart
+
+│       └── Week10.pdf    #Final Deployment And Polish, Final Testing And Debugging, Project Completion And Documentation
 
 └── resources(sound files-week 8)
 
