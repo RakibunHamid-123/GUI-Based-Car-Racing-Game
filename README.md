@@ -88,7 +88,7 @@ The final phase focused on code refactoring, performance optimization, and compr
 
 Audio integration utilizes Java's Classloader to access classpath resources via getClass().getResource("/weeks/filename.wav"). This ensures cross-platform audio file resolution and avoids hardcoded file system dependencies when compiled into an executable JAR. Audio bytes are streamed into uncompressed Clip memory objects via AudioSystem.getAudioInputStream(). Background loops are executed using Clip.LOOP_CONTINUOUSLY, while event-driven effects use one-shot clip.start() triggers wrapped inside non-blocking try-catch blocks.
 
-6)How to Play
+6) How to Play
 
 a. Game Launch & Menu
 * Run `Week9.java` to start the application.
@@ -110,5 +110,5 @@ d. Game Over & Restart
 * A dark overlay displays your **Final Score** and **Time Survived**.
 * Press **`R`** at any time on the Game Over screen to instantly reset parameters and start a new run.
 
-6) Conclusion: 
+7) Conclusion: 
 The Java 2D Car Racing Game project successfully demonstrates the power and flexibility of core Java Swing and AWT frameworks when building performant, object-oriented desktop games without external heavy engines. Through a structured 10-week developmental lifecycle, the application evolved from simple window initialization into a complete arcade experience featuring custom vector rendering, a state-driven architecture, robust collision physics, responsive user input, and embedded multi-channel audio.   By maintaining clean component isolation, leveraging native Swing timing mechanisms, and utilizing classpath resource streaming, the project serves as an ideal reference implementation for Java game loops, GUI event handling, and cross-platform desktop application packaging.           
