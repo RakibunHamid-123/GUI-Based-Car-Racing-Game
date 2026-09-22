@@ -10,37 +10,37 @@ Car-Racing-Game/
 
 │   └── weeks/
 
-│       ├── Week1.pdf     # Requirement Collection And Planning Project Layout
+│         ├── Week1.pdf     # Requirement Collection And Planning Project Layout
 
-│       ├── Week2.java    # Environment Setup & Window Canvas Initialization
+│         ├── Week2.java    # Environment Setup & Window Canvas Initialization
 
-│       ├── Week3.java    # Track Layout & Vector Graphics Rendering
+│         ├── Week3.java    # Track Layout & Vector Graphics Rendering
 
-│       ├── Week4.java    # KeyListener Integration & Player Movement Bounds
+│         ├── Week4.java    # KeyListener Integration & Player Movement Bounds
 
-│       ├── Week5.java    # Enemy Spawning System & Lane Scrolling Physics
+│         ├── Week5.java    # Enemy Spawning System & Lane Scrolling Physics
 
-│       ├── Week6.java    # Frame Counter, Score System & Survival Timer
+│         ├── Week6.java    # Frame Counter, Score System & Survival Timer
 
-│       ├── Week7.java    # Collision Detection Engine & Game Over State
+│         ├── Week7.java    # Collision Detection Engine & Game Over State
 
-│       ├── Week8.java    # Java Sound API Integration & WAV Asset Loader
+│         ├── Week8.java    # Java Sound API Integration & WAV Asset Loader
 
-│       └── Week9.java    # Finite State Machine, Welcome Screen & System Restart
+│         ├── Week9.java    # Finite State Machine, Welcome Screen & System Restart
 
-│       └── Week10.pdf    #Final Deployment And Polish, Final Testing And Debugging, Project Completion And Documentation
+│         └── Week10.pdf    #Final Deployment And Polish, Final Testing And Debugging, Project Completion And Documentation
 
 └── resources(sound files)
 
     └── weeks/(week 8)
     
-         ├── welcome.wav   -Menu Background Music
+          ├── welcome.wav   -Menu Background Music
         
-         ├── run.wav       -Engine Driving Background Audio
+          ├── run.wav       -Engine Driving Background Audio
         
-         ├── score.wav     -Point Score Sound Effect
+          ├── score.wav     -Point Score Sound Effect
         
-         └── crash.wav     -Collision Sound Effect
+          └── crash.wav     -Collision Sound Effect
 
 4) Weekly Development Summary
 
@@ -87,6 +87,28 @@ The final phase focused on code refactoring, performance optimization, and compr
 5) Sound File Attachment Technique:
 
 Audio integration utilizes Java's Classloader to access classpath resources via getClass().getResource("/weeks/filename.wav"). This ensures cross-platform audio file resolution and avoids hardcoded file system dependencies when compiled into an executable JAR. Audio bytes are streamed into uncompressed Clip memory objects via AudioSystem.getAudioInputStream(). Background loops are executed using Clip.LOOP_CONTINUOUSLY, while event-driven effects use one-shot clip.start() triggers wrapped inside non-blocking try-catch blocks.
+
+6)How to Play
+
+a. Game Launch & Menu
+* Run `Week9.java` to start the application.
+* The game opens on the **Welcome Screen** displaying control instructions and playing background music (`welcome.wav`).
+* Press **`ENTER`** to start active gameplay.
+
+b. Vehicle Controls
+* **`LEFT ARROW`**: Steer your vehicle to the left lane.
+* **`RIGHT ARROW`**: Steer your vehicle to the right lane.
+* *Note: Player movement is bounded strictly between 150 px and 390 px to keep your car safely on the road.
+
+c. Gameplay Mechanics & Objective
+* **Avoid Collisions**: Navigate through oncoming traffic and prevent your red vehicle from colliding with enemy cars.
+* **Earn Points**: Each successful dodge past an enemy car awards +10 Points and triggers a score sound effect (`score.wav`).
+* **Survival Time**: Track your total driving duration (in seconds) live on the top-left HUD.
+
+d. Game Over & Restart
+* A collision with an enemy car instantly stops the game loop, halts engine audio, and triggers the crash sound effect (`crash.wav`).
+* A dark overlay displays your **Final Score** and **Time Survived**.
+* Press **`R`** at any time on the Game Over screen to instantly reset parameters and start a new run.
 
 6) Conclusion: 
 The Java 2D Car Racing Game project successfully demonstrates the power and flexibility of core Java Swing and AWT frameworks when building performant, object-oriented desktop games without external heavy engines. Through a structured 10-week developmental lifecycle, the application evolved from simple window initialization into a complete arcade experience featuring custom vector rendering, a state-driven architecture, robust collision physics, responsive user input, and embedded multi-channel audio.   By maintaining clean component isolation, leveraging native Swing timing mechanisms, and utilizing classpath resource streaming, the project serves as an ideal reference implementation for Java game loops, GUI event handling, and cross-platform desktop application packaging.           
